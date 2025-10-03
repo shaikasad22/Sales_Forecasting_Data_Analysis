@@ -1,24 +1,18 @@
-# Project
+# Sales_Forecasting_Data_Analysis
+Sales forecasting using multiple models - Seasonal Naïve, Holt-Winters, ARIMA, SARIMA and Linear Regression Model
 
-A brief description of what this project does and who it's for.
+## Project Objective
+Goal: The goal of this project was to apply various quantitative methods, (i.e. Times Series Models and Causal Models) to forecast the sales of the products available in the dataset.
 
-## Table of Contents
+- Perform time series analysis to understand the data and trends
+- Use multiple forecasting models on train dataset
+- Finally select the best model to run the test data
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Models covered in the notebook include:
+1. Seasonal Naive Model
+2. Holt-Winters Model (Triple Exponential Smoothing)
+3. ARIMA Model and Seasonal ARIMA Models
+4. Linear Regression Model
 
-## Installation
-
-Instructions on how to install and set up the project:
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/your-repo-name.gi
-
-# Navigate to the project directory
-cd your-repo-name
-
-# Install dependencies
-npm install
+## Conclusion
+We considered different time-series models as well as a regression model for time series forecasting. From our results we saw that the linear regression model outperformed the other time-series models. Therefore, for this dataset we could use a regression model, rather than a time-series model to forecast sales. One of the main assumptions of regression models is that the patterns in the historical data will be repeated in the future, and since our data was highly seasonal and had a linear trend, it made sense why the linear regression model out-performed the other models.
